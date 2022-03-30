@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Improve the form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <h2>Pizza Form</h2>
+      <div class="label">Delivery Method</div>
+      <select id="id-delivery">
+        <option>Eat in store</option>
+        <option>Pickup</option>
+        <option>Home delivery</option>
+      </select>
+      <div class="label">Name</div>
+      <input id="id-name" type="text" size="30" />
+      <div class="label">Address</div>
+      <input id="id-address" type="text" size="40" />
+      <div class="label">Phone</div>
+      <input id="id-phone" type="text" size="14" />
+      <div class="group">
+        <div class="title">Crust</div>
+        <div class="label">
+          <input id="id-crust" name="crust" type="radio" value="Thin" />
+          Thin
+        </div>
+        <div class="label">
+          <input name="crust" type="radio" value="Classic" />
+          Classic
+        </div>
+        <div class="label">
+          <input name="crust" type="radio" value="Deep Dish" />
+          Deep Dish
+        </div>
+      </div>
+      <div class="group">
+        <div class="title">Toppings</div>
+        <div class="label">
+          <input name="topping" type="checkbox" value="Sausage" />
+          Sausage
+        </div>
+        <div class="label">
+          <input name="topping" type="checkbox" value="Pepperoni" />
+          Pepperoni
+        </div>
+        <div class="label">
+          <input name="topping" type="checkbox" value="Mushrooms" />
+          Mushrooms
+        </div>
+        <div class="label">
+          <input name="topping" type="checkbox" value="Onions" />
+          Onions
+        </div>
+        <div class="label">
+          <input name="topping" type="checkbox" value="Green Peppers" />
+          Green Peppers
+        </div>
+        <div class="label">
+          <input name="topping" type="checkbox" value="Black Olives" />
+          Back Olives
+        </div>
+        <div class="label">
+          <input name="topping" type="checkbox" value="Extra Cheese" />
+          Extra cheese
+        </div>
+      </div>
+      <input type="submit" value="Submit Order" />
+    </form>
+  </body>
+</html>
