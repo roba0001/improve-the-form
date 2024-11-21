@@ -15,34 +15,35 @@
 
       <label for="id-delivery">Delivery Method</label>
       <select id="id-delivery" name="delivery-options">
+        <option value="Choose" >---Choose delivery method---</option>
         <option value="Eat in store" >Eat in store</option>
         <option value="Pickup">Pickup</option>
         <option value="Home delivery">Home delivery</option>
-      </select>
+      </select>   
 
       <label for="id-name">Name</label>
       <input id="id-name" type="text" name="information" />
 
       <label for="id-address">Address</label>
-      <input id="id-address" type="text" name="information"/>
+      <input id="id-address" type="text" name="information" required/>
 
       <label for="id-phone">Phone</label>
-      <input id="id-phone" type="number" name="information" aria-describedby="instruction" />
+      <input id="id-phone" type="tel" name="information" aria-describedby="instruction" />
       <p id="instruction">We don't store your phone number beyond delivery</p>
 
-      <div class="group">
-        <h4>Crust</h4>
+      <fieldset>
+        <legend><h4>Crust</h4></legend>
           <label for="id-thin">Thin</label>
           <input type="radio" id="id-thin" value="Thin" name="crust">
           <label for="id-classic">Classic</label>
           <input type="radio" id="id-classic" value="Classic" name="crust">
           <label for="id-dd">Deep Dish</label>
           <input type="radio" id="id-dd" value="Deep Dish" name="crust">
-        </div>
+        </fieldset>
 
         
 
-      <div class="group">
+      <div class="toppings">
         <h4>Toppings</h4>
         <label for="sausage">Sausage</label>
         <input type="checkbox" id="sausage" value="Sausage" name="topping">

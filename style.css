@@ -33,7 +33,10 @@
 input[type="submit"] {
   margin-top: 2em;
 }
-fieldset{
+
+fieldset, .toppings{
   display: flex;
   flex-direction: column;
 }
+
+
